@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquérito - Lamtec_ID+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <div class="logo"><img src="" alt=""></div>
+      <h1>Lamtec_ID+</h1>
+      <p>Segurança para o furturo</p>
+    </div>    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Nossa Visão</a></li>
+        </ul>
+    </nav>
+  </header>  
+  <section id="inicio">
+    <div>"SLideshow sobre a Lamtec_ID+"</div>
+    
+  </section>
+  <section id="quemsomos">
+    <div class="row">
+      <div class="text">
+        <p>
+          Olá, somos a Lamtec, uma startup que está desenvolvendo uma plataforma digital integrada que oferece emissão,
+          renovação e verificação segiura de documentos pessoais, como bilhete de identidade e certidão de nascimento.
+          
+      </p>
+      <p>
+          Estamos realizando uma pesquisa para entender melhor as necessidades e expectativas do nosso público-alvo em
+          relação a esse tipo de serviço. A sua participação é muito importante para nós e levará apenas alguns minutos.
+      </p>
+      <p>
+          As suas respostas serão tratadas de forma confidencial e anônima, e serão uasdas apenas para fins da validação
+          da nossa ideia. Agradecemos a sua colaboração.
+      </p>
+      </div>
+    </div>
+    
+  </section>
+  <section id="nossavisao">
+    <div class="row">
+      <div class="text">
+        <h1>Dados</h1>
+    <form method="post">      
+        <label for="Genero">Qual o seu genero?</label><br>
+        <select name="genero" id="Genero">            
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+            <option value="Perfiro não responder">Perfiro não responder</option>
+        </select><br>
+        <label for="idade">Qual é a sua faixa etária?</label><br>
+         <select name="idade" id="idade">
+            <option value="Menos de 18 anos">Menos de 18 anos</option>
+            <option value="De 18 a 25 anos">De 18 a 25 anos</option>
+            <option value="-De 26 a 35">De 26 a 35 </option>
+            <option value="-De 36 a 45 anos">De 36 a 45 anos</option>
+            <option value="-De 46 a 55 anos">De 46 a 55 anos</option>
+            <option value="-De 56 a 64 anos">De 56 a 64 anos</option>
+            <option value="-Mais de 65 anos">Mais de 65 anos</option>
+            <option value="Perfiro não responder">Perfirono não responder</option>
+         </select><br>
+         <label for="locatizacao">Qual a sua localização</label>
+         <input type="text" name="locatizacao" id="locatizacao" placeholder="Digite a sua província">
+         <h1>Problema</h1>
+         <div>Voçê já precisou emitir, renovar ou verificar algum documento pessoal nos ultimos 12 meses?</div>
+         <label for="sim">Sim</label>
+         <input type="checkbox" name="sim" id="sim">
+         <label for="nao">Não</label>
+         <input type="checkbox" name="nao" id="nao">
+         <label for="documentos">Se sim, quais documentos voçê precisou emitir, renovar ou verificar?</label>
+         <input type="text" name="documentos" id="documentos" placeholder="Escrever...">
+         <label for="desafios">Quais foram as dificuldades e desafios que enfrentou?</label>
+         <input type="text" name="desafios" id="desafios" placeholder="Escrever...">
+         <label for="avaliacao">Como avalia o atendimento que teve?</label>
+         <input type="text" name="avaliacao" id="avaliacao" placeholder="comenta aqui...">
+         <h1>Solução</h1>
+         <div>
+            Voçê conhence ou já usou açlguma solução existente no mercado para emitir, renovar ou verificar documentos
+            pessoais de forma online, intuitiva e segura?
+         </div>
+         <label for="sim">Sim</label>
+         <input type="checkbox" name="sim" id="sim">
+         <label for="nao">Não</label>
+         <input type="checkbox" name="nao" id="nao">
+         <label for="avsolucoaSim">Se sim, qual solução usou e Como voçê avalia a solução que utilizada?</label>
+         <input type="text" name="avsolucoaSim" id="avsolucao" placeholder="Deixe o seu comentario...">
+         <label for="avsolucaoNao">Se não, voçê gostaria de conhecer ou usar uma solução como essa? Por quê?</label>
+         <input type="text" name="avsolucaoNao" id="avsolucaoNao" placeholder="Deixe o seu comentario...">
+         <label for="oquespera">Oque voçê espera de uma solução como a LAMTEC ID+, para melhorar a sua experiência com a emissão, renovação e verificaçã de documentos?</label>
+         <input type="text" name="oquespera" id="oquespera" placeholder="Deixe a sua comentario...">
+         <h1>Valor</h1>
+         <label for="quantogasto">Quanto voçê gasta atualmente com esses processos? Tanto para gastos diretos ou indiretos envolvidos.</label>
+         <input type="text" name="quantogasto" id="quantogasto" placeholder="responder...">
+         <label for="dispostoapagar">Quanto voçê estaria disposto a pagar por uma solução como a LAMTEC ID+ que oferece esses serviços online de forma intuitiva e segura?</label>
+         <input type="text" name="dispostoapagar" id="dispostoapagar" placeholder="responder...">
+         <label for="comopagar">Como voçê perfere pagar por essa solução?</label>
+         <select name="comopagar" id="comopagar">
+            <option value="Por Documento">Por Documento</option>
+            <option value="Por Assinatura">Por Assinatura</option>
+            <option value="Por Pacote">Por Pacote</option>
+         </select>
+         <h1>Agradecimentos</h1>
+         <p>
+            Muito obrigado pela sua participação!
+         </p>
+         <p>
+            Se voçê estiver interessado em saber mais sobre a LAMTEC ID+ ou receber atualizações sobre o nosso projecto,
+            porfavor, deixe o seu e-mail 
+         </p>
+         <input type="text" name="email" placeholder="Digite o seu email">
+    </form>
+      </div>
+    </div>        
+  </section>
+  <footer>
+    <div class="copyright">
+        &copy; Copyright <strong><span>Lamtec_ID+</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://batistalando7@gmail.com/">batistalando7@gmail.com</a>
+      </div>
+  </footer>
+</body>
+</html>
