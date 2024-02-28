@@ -22,7 +22,17 @@ header li a{
     font-weight:bold;
     cursor: pointer;
 }
+.logo{
+    margin-bottom: 0%;
+}
+.logo img{
+    width: 80px;
+    height: 100px;
+    max-width: 90px;
+    min-width: none;
+}
 .title{
+    margin-top: 0%;
    background-color: aliceblue;
    
 }
@@ -35,8 +45,14 @@ h1{
     font-size: large;    
     flex: auto;
 }
+.mySlides {
+    display:none; 
+    height: 500px; 
+    width: 980px;    
+    border-radius: 2%;      
+}
 .row{
-    display: block;
+    display: grid;
     flex-direction: row;
     flex-wrap: wrap;    
 }
@@ -57,9 +73,35 @@ h1{
     border-style:hidden;
     background-color: rgba(128, 128, 128, 0.575);
     font-size: 11pt;
+    cursor: pointer;
+}
+.how{
+    border: hidden;
+    background-color: rgba(37, 26, 184, 0.267);
+    margin: 1% 5%;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: black;
 }
 .text{
     margin: 1% 5%;
+}
+#enviar{
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: red;
+    display: block;
+    align-items:center;
+    padding: 0.5% 40%;
+    margin: 0% 0% 15% 5%;
+    color: azure;
+    font-weight: 900;
+}
+.return{
+    font-size: 24pt;
+    color: red;
 }
 footer{
     background-color: black;

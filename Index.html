@@ -4,45 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inquérito - Lamtec_ID+</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="title">
-      <div class="logo"><img src="" alt=""></div>
+      <div class="logo"><img src="logotipo.jpeg" alt="Lamtec_ID"></div>
       <h1>Lamtec_ID+</h1>
       <p>Segurança para o furturo</p>
     </div>    
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quem Somos</a></li>
-            <li><a href="#">Nossa Visão</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quemsomos">Quem Somos</a></li>
+            <li><a href="#nossavisao">Nossa Visão</a></li>
         </ul>
     </nav>
   </header>  
-  <section id="inicio">
-    <div>"SLideshow sobre a Lamtec_ID+"</div>
-    
+  <section id="inicio">   
+    <!--Slide show-->    
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="WhatsApp Image 2024-02-27 at 22.00.53.jpeg">
+      <img class="mySlides" src="WhatsApp Image 2024-02-27 at 22.00.55.jpeg">
+      <img class="mySlides" src="WhatsApp Image 2024-02-27 at 22.00.58.jpeg">
+      <img class="mySlides" src="WhatsApp Image 2024-02-27 at 22.00.59.jpeg">    
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+      <!--Fim Slide show-->
   </section>
   <section id="quemsomos">
-    <div class="row">
-      <div class="text">
+    <div class="row">  
+      <div class="how">
+        <div class="text">
+          <h1>Quem Somos</h1>
+          <p>
+            Olá, somos a Lamtec, uma startup que está desenvolvendo uma plataforma digital integrada que oferece emissão,
+            renovação e verificação segiura de documentos pessoais, como bilhete de identidade e certidão de nascimento.
+            
+        </p>
         <p>
-          Olá, somos a Lamtec, uma startup que está desenvolvendo uma plataforma digital integrada que oferece emissão,
-          renovação e verificação segiura de documentos pessoais, como bilhete de identidade e certidão de nascimento.
-          
-      </p>
-      <p>
-          Estamos realizando uma pesquisa para entender melhor as necessidades e expectativas do nosso público-alvo em
-          relação a esse tipo de serviço. A sua participação é muito importante para nós e levará apenas alguns minutos.
-      </p>
-      <p>
-          As suas respostas serão tratadas de forma confidencial e anônima, e serão uasdas apenas para fins da validação
-          da nossa ideia. Agradecemos a sua colaboração.
-      </p>
+            Estamos realizando uma pesquisa para entender melhor as necessidades e expectativas do nosso público-alvo em
+            relação a esse tipo de serviço. A sua participação é muito importante para nós e levará apenas alguns minutos.
+        </p>
+        <p>
+            As suas respostas serão tratadas de forma confidencial e anônima, e serão uasdas apenas para fins da validação
+            da nossa ideia. Agradecemos a sua colaboração.
+        </p>
+        </div>
       </div>
-    </div>
+
+      </div>    
     
   </section>
   <section id="nossavisao">
@@ -117,10 +149,11 @@
             porfavor, deixe o seu e-mail 
          </p>
          <input type="text" name="email" placeholder="Digite o seu email">
-    </form>
-      </div>
-    </div>        
-  </section>
+      </div>      
+    </div>          
+      <input type="submit" name="enviar" id="enviar" value="Enviar">        
+  </form>       
+  </section>  
   <footer>
     <div class="copyright">
         &copy; Copyright <strong><span>Lamtec_ID+</span></strong>. All Rights Reserved
@@ -128,6 +161,6 @@
       <div class="credits">
         Designed by <a href="https://batistalando7@gmail.com/">batistalando7@gmail.com</a>
       </div>
-  </footer>
+  </footer>  
 </body>
 </html>
